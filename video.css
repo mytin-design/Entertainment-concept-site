@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.5;
+    word-spacing: 10px;
+    font-family: 'Handlee', cursive;
+}
+
+html {
+    background: #26151c;
+}
+.container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    border-radius: 5px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background:  #4d2a38;
+}
+
+.one {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.one > a, img {
+    border-radius: 50%;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    background-color:#E1f5ee;
+    color: #000;
+    opacity: .6;
+    border: 0;
+    filter: invert(70%);
+}
+
+button:hover {
+    filter: drop-shadow(5px 8px 10px hsl(248, 48%, 40%));
+    cursor: pointer;
+    opacity: .9;
+}
+
+.player {
+    width: 90%;
+    height: 400px;
+    margin-top: 30px;
+    background: hsl(248, 34%, 18%);
+    border-radius: 10px;
+    border: 0;
+}
+
+
+.player > video {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+video:hover {
+    cursor: pointer;
+    filter: opacity(60%);
+    /*transform: perspective(100px);
+    transform: rotateX(45deg);*/ /*These two when applied to the .video-panel video elements respond effectively,but not with the .player video; so use wisely */
+}
+
+.music-options {
+    margin-top: 20px;
+}
+
+.video-panel {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+    overflow-y: scroll;
+    flex-wrap: wrap;
+
+}
+.vid > * {
+    height: 300px;
+    width: 300px;
+    border-bottom: 5px solid rgb(168, 98, 98);
+    border-top: 5px solid rgb(245, 147, 147);
+    border-radius: 5px;
+    filter: saturate(2); /* the saturate value accepts (100%) percentage values and integers (2,5)*/
+
+}
+
+
+footer {
+    margin-top: 78px;
+    margin-bottom: 18px;
+}
+.circle-play {
+    transform: scale(3);
+}
+
+.circle-play:hover {
+    filter: saturate(30%);
+    fill:hsl(248, 48%, 40%);
+    cursor: progress;
+}

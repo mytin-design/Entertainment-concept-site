@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Akkadian Music</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="music.css">
+
+        <link rel="icon"
+        sizes="32x32"
+        href="./images/logo.png"
+        type="image/png"/>
+    </head>
+    <body>
+
+        <!--This container holds the search input - other critical/quick functions may be included-->
+        <main class="container main body holder">
+            <div class="header search settings">
+                <img style="display: inline; background-color: #fff;" src="images/universal-music-50.png" alt="music icon">
+                <input id="search" type="search" placeholder="Chris Brown overtime..." name="search">
+            </div>
+
+
+            <!--This is the container for music play plugin and favorite songs on aside container-->
+            <div class="player-c favourites display">
+                <div class="player plug-in"></div>
+                <div class="favorite-music">
+                    <img style="display: inline; background-color: #fff;" src="images/universal-music-50.png" alt="music icon"> <!--Use icon where possible-->
+                    
+                    <!--A table for favourite music-->
+
+                    <table class="fav-music"> <!--display the cells as overflow: hidden; if they exceed container width-->
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Song</th>
+                                <th>Size(MBs)</th>
+                                <th>Lyrics</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="fav-song-1">
+                                <td>Chris Brown</td>
+                                <td>Overtime</td>
+                                <td>10.5</td>
+                                <td><a href="audio/overtime.mp3">See Lyrics</a></td>
+                            </tr>
+
+                            <tr class="fav-song-2">
+                                <td>Jordin Sparks</td>
+                                <td>Battelfield</td>
+                                <td>10.5</td>
+                                <td><a href="audio/battlefield-jsparks.mp3">See Lyrics</a></td>
+                            </tr>
+
+                            <tr class="fav-song-3">
+                                <td>Jordin Sparks</td>
+                                <td>One Step AT a Time</td>
+                                <td>10.5</td>
+                                <td><a href="audio/onestepatatime-jsparks.mp3">See Lyrics</a></td>
+                            </tr>
+
+                            <tr class="fav-song-4">
+                                <td>Chris Brown</td>
+                                <td>Red</td>
+                                <td>10.5</td>
+                                <td><a href="audio/red-chrisbrown.mp3">See Lyrics</a></td>
+                            </tr>
+
+                            <tr class="fav-song-5">
+                                <td>Chris Brown</td>
+                                <td>Overtime</td>
+                                <td>10.5</td>
+                                <td><a href="overtime.mp3">See Lyrics</a></td>
+                            </tr>
+
+                            <tr class="fav-song-6">
+                                <td>Taylor Swift</td>
+                                <td>Delicate</td>
+                                <td>10.5</td>
+                                <td><a href="audio/delicate-taylorswift.mp3">See Lyrics</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>    
+                    
+            </div>
+            <!--This is a div for music container control buttons - display: flex;-->
+
+            <div class="btns mContainer-btns">
+                <button type="button" id="nightcore" class="contain-btn">Nightcore</button>
+                <button type="button" id="sad" class="contain-btn">Sad</button>
+                <button type="button" id="love" class="contain-btn">Love</button>
+                <button type="button" id="other" class="contain-btn">Other</button>
+            </div>
+            <!--This is the music container with a lyrics plug in-->
+
+            <div class="music-container data-set lyrics-plug" id="mContainer">
+                <div class="lyrics-plugin">
+                    <iframe src=""></iframe> <!-- should be displayed as hidden; displayed by javascript  - this will display lyrics from external source as specified-->
+                </div>
+                <br>
+                    <table>
+                        <thead>
+                            <tr class="song-details">
+                                <th>Artist</th>
+                                <th>Song Name</th>
+                                <th>Size</th>
+                                <th>Lyrics</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="song-1">
+                                <td id="song-play"><input type="checkbox" name="select" id="selected"> Taylor Swift </td>
+                                <td>Overtime</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/delicate-taylorswift.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-2">
+                                <td id="song-play"> <input type="checkbox" name="select" id="selected">Chris Brown</td>
+                                <td>Overtime</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/delicate-taylorswift.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-3">
+                                <td id="song-play"><input type="checkbox" name="select" id="selected">Chris Brown</td>
+                                <td>Overtime</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/delicate-taylorswift.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-4">
+                                <td id="song-play"> <input type="checkbox" name="select" id="selected">Vybz Kartel</td>
+                                <td>Life Is What You Make It</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/vybz-lifeiswhatyoumakeit.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-5">
+                                <td id="song-play"> <input type="checkbox" name="select" id="selected">South Africa</td>
+                                <td>Shay mpe mpe</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/shaimpempe.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-6">
+                                <td id="song-play"> <input type="checkbox" name="select" id="selected">Chris Brown</td>
+                                <td>Royalty</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/royalty-chrisbrown.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-7">
+                                <td id="song-play"> <input type="checkbox" name="select" id="selected">Chris Brown</td>
+                                <td>Red</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/red-chrisbrown.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-8">
+                                <td id="song-play"> <input type="checkbox" name="select" id="selected">Jordin Sparks</td>
+                                <td>One Step At a Time</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/onestepatatime-jsparks.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-9">
+                                <td id="song-play"> <input type="checkbox" name="select" id="selected">Nightcore</td>
+                                <td>Nightcore</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/nightcore.mp3" controls autoplay mute></audio></td>
+                            </tr>
+
+                            <tr class="song-10">
+                                <td id="song-play"> <input type="checkbox" name="select" id="selected">Jordin SParks</td>
+                                <td>Battlefield</td>
+                                <td>10.5</td>
+                                <td><audio style="width: 100%; height: 25px; color: #fff;" src="audio/battlefield-jsparks.mp3" controls autoplay mute></audio></td>
+                            </tr>
+                            
+
+                        </tbody>
+                    </table>
+            </div>
+        </main>
+    </body>
+</html>

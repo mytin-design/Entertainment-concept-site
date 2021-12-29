@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@100&family=M+PLUS+Rounded+1c:wght@100&family=Open+Sans+Condensed:wght@300&family=Poppins:wght@200;400;500;600;800&display=swap');
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'M Plus Code Latin', 'Lucida Sans';
+    font-weight: bold;
+    background-color: #ad9ea5;
+}
+
+.holder {
+    display: grid;
+    justify-items: center;
+    grid-gap: 50px;
+    grid-template-areas:
+    "search search search"
+    "player player player"
+    "button button button"
+    "mContainer mContainer mContainer"
+}
+
+
+/* search/ header container styles */
+.search {
+    grid-area: search;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 18px;
+    background: url(images/microphone.jpg) 50% 50% no-repeat;
+    background-size: cover;
+
+}
+
+.search input {
+    width: 40%;
+    height: 35px;
+    border-radius: 28px;
+    background-color: #c2b6bc;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+
+/* player container styles */
+
+.display {
+    grid-area: player;
+    height: 400px;
+    width: 100%;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+
+}
+
+.player {
+    border: 1px solid #000;
+    grid-column: 1 / span 2;
+    background: url(images/what-u-listen-2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+
+td {
+    border-top: 1px solid #fff;
+    padding: 10px;
+}
+
+
+.favorite-music {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #240915;
+
+}
+
+.fav-music {
+    background: #513843;
+    color: #fff;
+    padding: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 2s;
+
+}
+a:hover {
+    background-color: blue;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+h4 {
+    font-size: 20px;
+    margin-top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #240915;
+    color: #fff;
+    height: 50px;
+    
+}
+
+
+
+
+.music-container {
+    grid-area: mContainer;
+    width: 100%;
+    height: 400px;
+}
+
+/* music container control buttons - add intercativity with JavaScript */
+
+.btns {
+    grid-area: button;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btns button {
+    width: 100%;
+    border-radius: 8px;
+    background: #2d111e;
+    color: #fff;
+    font-weight: bolder;
+    transition: background 2s;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* the music container */
+
+.lyrics-plugin {
+    display: none; /* bring to display while rendering lyrics */
+}
+
+.music-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.music-container > table {
+    width: 100%;
+}
+
+.song-details > th {
+    font-weight: bolder;
+    font-size: 18px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+#song-play:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+

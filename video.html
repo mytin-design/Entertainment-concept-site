@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Akkadian Video Player</title>
+        <meta name="charset=utf-8">
+        <meta name="vieport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Video, music, player, play, watch">
+        <meta http-equiv="X-UA-Compatible" content="IE-7">
+        <link href="video.css" rel="stylesheet" type="text/css">
+        <script src="https:kit.fontawesome.com/45fbaa9681.js" crossorigin="anonymous"></script>
+        <link 
+        rel="icon"
+        sizes="2x2"
+        href="./images/logo.png"
+        type="image/png"/> <!--The favicon on title was not working until i included type-->
+    </head>
+
+    <body>
+        <main class="main container">
+            <header class="one controls">
+                <a href="video.html"><abbrev title="Video Player"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tv" class="svg-inline--fa fa-tv" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="cyan" d="M512 448H127.1C110.3 448 96 462.3 96 479.1S110.3 512 127.1 512h384C529.7 512 544 497.7 544 480S529.7 448 512 448zM592 0h-544C21.5 0 0 21.5 0 48v320C0 394.5 21.5 416 48 416h544c26.5 0 48-21.5 48-48v-320C640 21.5 618.5 0 592 0zM576 352H64v-288h512V352z"></path></svg></abbrev></a>
+                <button class="playlist"><abbrev title="Create a PlayList"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="headphones" class="svg-inline--fa fa-headphones" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M512 287.9l-.0042 112C511.1 444.1 476.1 480 432 480c-26.47 0-48-21.56-48-48.06V304.1C384 277.6 405.5 256 432 256c10.83 0 20.91 2.723 30.3 6.678C449.7 159.1 362.1 80.13 256 80.13S62.29 159.1 49.7 262.7C59.09 258.7 69.17 256 80 256C106.5 256 128 277.6 128 304.1v127.9C128 458.4 106.5 480 80 480c-44.11 0-79.1-35.88-79.1-80.06L0 288c0-141.2 114.8-256 256-256c140.9 0 255.6 114.5 255.1 255.3C511.1 287.5 511.1 287.7 512 287.9z"></path></svg></abbrev></button>
+            </header>
+            <div class="two player">
+                <video controls autoplay>
+                    <source src="./videos/Omah Lay - Understand.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="three music-options">
+                <button class="music-en"><abbrev title="English Music Videos"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="music" class="svg-inline--fa fa-music" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M511.1 367.1c0 44.18-42.98 80-95.1 80s-95.1-35.82-95.1-79.1c0-44.18 42.98-79.1 95.1-79.1c11.28 0 21.95 1.92 32.01 4.898V148.1L192 224l-.0023 208.1C191.1 476.2 149 512 95.1 512S0 476.2 0 432c0-44.18 42.98-79.1 95.1-79.1c11.28 0 21.95 1.92 32 4.898V126.5c0-12.97 10.06-26.63 22.41-30.52l319.1-94.49C472.1 .6615 477.3 0 480 0c17.66 0 31.97 14.34 32 31.99L511.1 367.1z"></path></svg></abbrev></button>
+                <button class="motivation"><abbrev title="Motivation Videos"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fire" class="svg-inline--fa fa-fire" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M323.5 51.25C302.8 70.5 284 90.75 267.4 111.1C240.1 73.62 206.2 35.5 168 0C69.75 91.12 0 210 0 281.6C0 408.9 100.2 512 224 512s224-103.1 224-230.4C448 228.4 396 118.5 323.5 51.25zM304.1 391.9C282.4 407 255.8 416 226.9 416c-72.13 0-130.9-47.73-130.9-125.2c0-38.63 24.24-72.64 72.74-130.8c7 8 98.88 125.4 98.88 125.4l58.63-66.88c4.125 6.75 7.867 13.52 11.24 19.9C364.9 290.6 353.4 357.4 304.1 391.9z"></path></svg></abbrev></button>
+                <button class="Programming"><abbrev title="Programming Videos"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="code" class="svg-inline--fa fa-code" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M416 31.94C416 21.75 408.1 0 384.1 0c-13.98 0-26.87 9.072-30.89 23.18l-128 448c-.8404 2.935-1.241 5.892-1.241 8.801C223.1 490.3 232 512 256 512c13.92 0 26.73-9.157 30.75-23.22l128-448C415.6 37.81 416 34.85 416 31.94zM176 143.1c0-18.28-14.95-32-32-32c-8.188 0-16.38 3.125-22.62 9.376l-112 112C3.125 239.6 0 247.8 0 255.1S3.125 272.4 9.375 278.6l112 112C127.6 396.9 135.8 399.1 144 399.1c17.05 0 32-13.73 32-32c0-8.188-3.125-16.38-9.375-22.63L77.25 255.1l89.38-89.38C172.9 160.3 176 152.2 176 143.1zM640 255.1c0-8.188-3.125-16.38-9.375-22.63l-112-112C512.4 115.1 504.2 111.1 496 111.1c-17.05 0-32 13.73-32 32c0 8.188 3.125 16.38 9.375 22.63l89.38 89.38l-89.38 89.38C467.1 351.6 464 359.8 464 367.1c0 18.28 14.95 32 32 32c8.188 0 16.38-3.125 22.62-9.376l112-112C636.9 272.4 640 264.2 640 255.1z"></path></svg></abbrev></button>
+                <button class="music-gk"><abbrev title="Gikuyu Songs"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="guitar" class="svg-inline--fa fa-guitar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.7 39.02L473 9.37c-12.5-12.5-32.74-12.49-45.24 .0106l-46.24 46.37c-3.875 3.875-6.848 8.506-8.598 13.76l-12.19 36.51L284.5 182.3C272.4 173.5 259 166.5 244.4 163.1C211 155.4 177.4 162.3 154.5 185.1C145.3 194.5 138.3 206 134.3 218.6C128.3 237.1 111.1 251.3 92.14 253C68.52 255.4 46.39 264.5 29.52 281.5c-45.62 45.5-37.38 127.5 18.12 183c55.37 55.38 137.4 63.51 182.9 18c16.1-16.88 26.25-38.85 28.5-62.72c1.75-18.75 15.84-36.16 34.47-42.16c12.5-3.875 24.03-10.87 33.4-20.25c22.87-22.88 29.75-56.38 21.1-89.76c-3.375-14.63-10.39-27.99-19.14-40.11l76.25-76.26l36.53-12.17c5.125-1.75 9.894-4.715 13.77-8.59l46.36-46.29C515.2 71.72 515.2 51.52 502.7 39.02zM208 352c-26.5 0-48-21.5-48-48c0-26.5 21.5-48 48-48s47.1 21.5 47.1 48C256 330.5 234.5 352 208 352z"></path></svg></abbrev></button>
+            </div>
+
+            <!-- A container for a list of videos-->
+            <div class="videos video-panel all-video">
+                <div class="first-video vid">
+                    <video controls>
+                        <source src="./videos/Omah Lay - Understand.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="sec-video vid">
+                    <video controls>
+                        <source src="./videos/Jim Rohn.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls >
+                        <source src="./videos/Kidolee - Boondocks Gang.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls >
+                        <source src="./videos/Malaysia Morning Market Street Food.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls >
+                        <source src="./videos/MR SEED - ONLY ONE.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls>
+                        <source src="./videos/Richie Spice - Got to make it.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls >
+                        <source src="./videos/Street Food in Malaysia.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls>
+                        <source src="./videos/Troye Sivan - Strawberries & Cigarettes.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls>
+                        <source src="./videos/Tyga - Down For A Minunte.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls>
+                        <source src="./videos/USHERATI! - EXRAY.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls>
+                        <source src="./videos/Wagithomo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="first-video vid">
+                    <video controls>
+                        <source src="./videos/windows backslash.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <footer>
+                <div class="video-icon">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-play" class="svg-inline--fa fa-circle-play circle-play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="cyan" d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM372.5 276.5l-144 88C224.7 366.8 220.3 368 216 368c-13.69 0-24-11.2-24-24V168C192 155.3 202.2 144 216 144c4.344 0 8.678 1.176 12.51 3.516l144 88C379.6 239.9 384 247.6 384 256C384 264.4 379.6 272.1 372.5 276.5z"></path></svg>
+                </div>
+            </footer>
+        </main>
+    </body>
+</html>
